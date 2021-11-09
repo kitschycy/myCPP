@@ -131,44 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named myCpp
+# Target rules for targets named main
 
 # Build rule for target.
-myCpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myCpp
-.PHONY : myCpp
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-myCpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/build
-.PHONY : myCpp/fast
-
-houjie_cpp/Complex.o: houjie_cpp/Complex.cpp.o
-
-.PHONY : houjie_cpp/Complex.o
-
-# target to build an object file
-houjie_cpp/Complex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/houjie_cpp/Complex.cpp.o
-.PHONY : houjie_cpp/Complex.cpp.o
-
-houjie_cpp/Complex.i: houjie_cpp/Complex.cpp.i
-
-.PHONY : houjie_cpp/Complex.i
-
-# target to preprocess a source file
-houjie_cpp/Complex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/houjie_cpp/Complex.cpp.i
-.PHONY : houjie_cpp/Complex.cpp.i
-
-houjie_cpp/Complex.s: houjie_cpp/Complex.cpp.s
-
-.PHONY : houjie_cpp/Complex.s
-
-# target to generate assembly for a file
-houjie_cpp/Complex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/houjie_cpp/Complex.cpp.s
-.PHONY : houjie_cpp/Complex.cpp.s
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 main.o: main.cpp.o
 
@@ -176,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -185,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -194,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myCpp.dir/build.make CMakeFiles/myCpp.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -205,10 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... myCpp"
-	@echo "... houjie_cpp/Complex.o"
-	@echo "... houjie_cpp/Complex.i"
-	@echo "... houjie_cpp/Complex.s"
+	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
