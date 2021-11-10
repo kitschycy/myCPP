@@ -4,4 +4,5 @@ project(myCpp)
 set(CMAKE_CXX_STANDARD 14)
 
 #add_executable(myCpp main.cpp houjie_cpp/Complex.cpp)
-add_executable(main main.cpp)
+#add_executable(main main.cpp houjie_STL/containerTest.cpp)
+add_executable(containerTest houjie_STL/containerTest.cpp Archive/reverseStr.cpp)

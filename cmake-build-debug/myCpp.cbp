@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main">
-				<Option output="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="containerTest">
+				<Option output="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/containerTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 containerTest"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="main/fast">
-				<Option output="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+			<Target title="containerTest/fast">
+				<Option output="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/containerTest" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,15 +73,18 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 containerTest/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yangchenyu/Desktop/LocalCode/myCpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/yangchenyu/Desktop/LocalCode/myCpp/main.cpp">
-			<Option target="main"/>
+		<Unit filename="/Users/yangchenyu/Desktop/LocalCode/myCpp/Archive/reverseStr.cpp">
+			<Option target="containerTest"/>
+		</Unit>
+		<Unit filename="/Users/yangchenyu/Desktop/LocalCode/myCpp/houjie_STL/containerTest.cpp">
+			<Option target="containerTest"/>
 		</Unit>
 		<Unit filename="/Users/yangchenyu/Desktop/LocalCode/myCpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
